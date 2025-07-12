@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    width:100%;
+    height:100%;
+    background-color:#fbf0fd;
+    color:#503737fb;
+}
+header{
+    width:100%;
+    height:17vh;
+    background-color:#f4c2c281;
+    display: flex;
+    justify-content: space-between;
+    padding:17px;
+    position: relative;
+}
+img{
+    width:5vw;
+    background-color: black;
+}
+.logo{
+    display: flex;
+    width:200vw;
+    height: 10vh;
+    flex-direction: row;
+    align-items:center;
+    gap:.8vw;
+    
+
+    
+}
+.logo>p{
+    font-size:4.7vw;
+    font-family:"Concert One";
+    
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav a{
+    margin:0 1.5vw;
+    text-decoration: none;
+    font-family: cursive;
+    font-size: 2.4vh;
+    color:black;
+    
+
+}
+nav>i{display:none;}
+nav a:hover{
+    text-decoration: underline;
+}
+#tagline {
+    font-size: 1.3vw;
+    font-family: cursive;
+    color:black;
+    position: absolute;
+    bottom:3px;
+}
+.card{
+    font-family:cursive;
+    font-style: italic;
+    background-color: rgba(206, 229, 236, 0.733);
+    border: 1.5px solid black;
+    padding:16px;
+    width:100%;
+    width:350px;
+    height: 250px;
+    margin:2px auto;
+    border-radius: 5.5px;
+    overflow: hidden;
+    line-clamp: 4;
+    cursor: pointer;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-content: space-between;
+    row-gap:6px;  
+}
+.card p{
+    margin:5.3px 0;
+    line-height: 27px;
+    font-size: 18.5px;
+    
+}
+header{
+    border-bottom: 3px solid black;
+    margin-bottom: 5px;
+}
+footer{
+    border-top: 2px solid black;
+    font-size: large;
+    font-family: sans-serif;
+    padding: 5px;
+    padding-left: 1vw;;
+    margin-top: 3px;
+}
+@media (max-width:600px) {
+    header{
+        height:14%;
+        padding:7px;
+    }
+    .logo>p{
+        font-size: 40px;
+    }
+    img{
+        width: 50px;
+    }
+    nav a{
+        display: none;
+        
+    }
+    .card{
+        width:99%;
+        margin:0 auto 4.2px auto;
+        font-family: "Cormorant Garamond";
+        font-weight: 600;
+    }
+    #tagline{
+        /* padding:13px 0; */
+        font-size: 19px;
+        font-weight:700;
+        
+    }
+    main{
+        display: block;
+        margin:0;
+
+    }
+    .card{
+        height:fit-content;
+    }
+    nav i{
+        display: inline;
+        font-size: 25px;
+        margin-bottom:25px;
+
+    }
+
+}
